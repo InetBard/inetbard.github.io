@@ -1,3 +1,5 @@
+import receiptProcessingServiceImg from "../../assets/images/ReceiptProcessingServiceImg.jpg";
+
 export const blogPosts = [
   {
     slug: "designing-a-receipt-processing-service-in-java",
@@ -8,7 +10,7 @@ export const blogPosts = [
     author: "Alex Bukhtiyarov",
     publishedAt: "April 29, 2026",
     readTime: "6 min read",
-    coverImage: "/assets/images/ReceiptProcessingServiceImg.jpg",
+    coverImage: receiptProcessingServiceImg,
     sections: [
       {
         type: "paragraph",

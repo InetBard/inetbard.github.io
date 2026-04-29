@@ -1,6 +1,6 @@
 import { useEffect } from "react";
-import {avatar} from './assets/images/pngtree-cartoon-character-hand-made-model-with-big-ears-png-image-7076952-96x96.png';
-import {portrait} from './assets/images/project3.png';
+import avatar from "../assets/images/pngtree-cartoon-character-hand-made-model-with-big-ears-png-image-7076952-96x96.png";
+import portrait from "../assets/images/project3.png";
 
 import {
   NavLink,
@@ -11,10 +11,13 @@ import {
 } from "react-router-dom";
 import { blogPosts, getPostBySlug } from "./data/posts";
 
+const basePath = import.meta.env.BASE_URL;
+const withBase = (path) => `${basePath}${path.replace(/^\/+/, "")}`;
+
 const navItems = [
   { label: "Blog", href: "/blog" },
   { label: "Portfolio", href: "/portfolio" },
-  { label: "Contacts", href: "/#contacts", isAnchor: true },
+  { label: "Contacts", href: withBase("#contacts"), isAnchor: true },
 ];
 
 function App() {
@@ -84,7 +87,7 @@ function Header() {
 
       <a
         className="button-primary"
-        href="/cv/Full_Stack_Dev_Java_Alex_Bukhtiyarov.pdf"
+        href={withBase("/cv/Full_Stack_Dev_Java_Alex_Bukhtiyarov.pdf")}
         download="Alex_Bukhtiyarov_CV.pdf"
       >
         Download CV
@@ -118,7 +121,7 @@ function HomePage() {
             <NavLink className="button-primary" to="/portfolio">
               Open Portfolio
             </NavLink>
-            <a className="button-secondary" href="#contacts">
+            <a className="button-secondary" href={withBase("#contacts")}>
               Contact Me
             </a>
           </div>
