@@ -1,6 +1,6 @@
 import { useEffect } from "react";
-import avatar from './assets/images/pngtree-cartoon-character-hand-made-model-with-big-ears-png-image-7076952-96x96.png';
-import portrait from './assets/images/project3.png';
+import {avatar} from './assets/images/pngtree-cartoon-character-hand-made-model-with-big-ears-png-image-7076952-96x96.png';
+import {portrait} from './assets/images/project3.png';
 
 import {
   NavLink,
