@@ -55,7 +55,7 @@ function Header() {
     <header className="topbar">
       <NavLink className="brand" to="/">
         <img
-          src="/assets/images/pngtree-cartoon-character-hand-made-model-with-big-ears-png-image-7076952-96x96.png"
+          src="./assets/images/pngtree-cartoon-character-hand-made-model-with-big-ears-png-image-7076952-96x96.png"
           alt="Avatar logo"
         />
         <span>AB</span>
@@ -124,7 +124,7 @@ function HomePage() {
         <div className="hero-visual">
           <div className="hero-visual-frame">
             <img
-              src="/assets/images/project3.png"
+              src="./assets/images/project3.png"
               alt="Cyberpunk inspired portrait"
             />
           </div>
