@@ -22,7 +22,6 @@ target/
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/
-/dist/
 /nbdist/
 /.nb-gradle/
 build/
@@ -36,7 +35,6 @@ build/
 node_modules/
 .expo/
 .expo-shared/
-dist/
 npm-debug.*
 *.jks
 *.p8
